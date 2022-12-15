@@ -11,10 +11,7 @@
 <body>
 
 	<?php
-
-		
-
-	use core\classes\Database;
+	/*==========================================================*/
 
 	//Abrir a Sessão
 	session_start();
@@ -25,15 +22,12 @@
 	//Carregar todas as classes do projeto
 	require_once('../vendor/autoload.php');
 
-	$bd = new Database();
-	$clientes = $bd->select("SELECT * FROM clientes");
-    //echo $clientes[0]->nome;
 
-    echo '<pre>';
-    print_r($clientes);
+	//Carrega o sistema de rotas
+	require_once('../core/rotas.php');
 
-	
-?>
+	/*==========================================================*/
+	?>
 	
 	<script src="js/script.js"></script>
 </body>
@@ -43,5 +37,5 @@
     Autor: Daniel Oliveira
     Email: danieloliveira.webmaster@gmail.com
     Manaus/Amazonas
-    31/03/2022
+    15/12/2022
 -->
