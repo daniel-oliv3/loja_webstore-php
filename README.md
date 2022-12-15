@@ -32,13 +32,13 @@
     - Segurança
     - Aspecto visual
 
-### 2 - PREPARAÇÃO E CONFIGURAÇÃO DO AMBIENTE
-
-**Xampp**
-- Site: https://www.apachefriends.org/pt_br/download.html
+### PREPARAÇÃO E CONFIGURAÇÃO DO AMBIENTE
 
 **Xampp**
 - Site: https://www.apachefriends.org/pt_br/index.html
+
+**Wampp**
+- Site: https://www.wampserver.com/en/
 
 **Visual Studio Code** 
 - Site: https://code.visualstudio.com/
@@ -51,6 +51,8 @@
 
 
 
+
+- Localhost: http://localhost/loja_webstore-php/
 
 
 
