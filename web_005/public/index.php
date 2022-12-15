@@ -25,12 +25,11 @@
 	//Carregar todas as classes do projeto
 	require_once('../vendor/autoload.php');
 
-	$base_d = new Database();
-	$clientes = $base_d->select("SELECT * FROM clientes");
-	echo '<prev>';
+	$bd = new Database();
+	$clientes = $bd->select("SELECT * FROM clientes");
+    echo $clientes[0]->nome;
 
-	echo 'Sapup3';
-
+	
 ?>
 	
 	<script src="js/script.js"></script>
