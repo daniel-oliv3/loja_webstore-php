@@ -49,13 +49,16 @@
 **HeidiSQL**
 - Site: https://www.heidisql.com/download.php
 
+**Composer**
+- Site: https://getcomposer.org/
 
+```
+composer init
+```
 
-
-- Localhost: http://localhost/loja_webstore-php/
-
-
-
+```
+composer update
+```
 
 
 
