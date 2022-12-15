@@ -67,7 +67,6 @@ composer update
 
 
 ### 6 - CRIAÇÃO DO SISTEMA DE ROTAS
-
 - Ex: web_006
 
 - http://localhost/loja_webstore-php/web_006/public/
@@ -76,7 +75,10 @@ composer update
 - http://localhost/loja_webstore-php/web_006/public/index.php?a=carrinho
 
 
+### 7 - SISTEMA DE APRESENTAÇÃO DE VIEWS E DADOS
+- Ex: web_007
 
+- http://localhost/loja_webstore-php/web_007/public/
 
 
 
