@@ -26,8 +26,10 @@
 	require_once('../vendor/autoload.php');
 
 	$bd = new Database();
-	$clientes = $bd->select("SELECT * FROM clientes");
-    echo $clientes[0]->nome;
+	//$clientes = $bd->select("SELECT * FROM clientes");
+    //echo $clientes[0]->nome;
+
+    $bd->select("INSERT TESTE");
 
 	
 ?>
