@@ -4,6 +4,7 @@
 $rotas = [
     'inicio' => 'main@index',
     'loja' => 'main@loja',
+    'carrinho' => 'loja@carrinho',
 ];
 
 
@@ -14,7 +15,7 @@ $acao = 'inicio';
 if(isset($_GET['a'])){
 
     //Verifica se a ação existe nas rotas
-    if(!key_exists($rotas, $_GET['a'])){
+    if(!key_exists($_GET['a'], $rotas)){
         $acao = 'inicio';
     }else {
         $acao = $_GET['a'];
@@ -24,8 +25,18 @@ if(isset($_GET['a'])){
 
 //Trata a definição da rota
 $partes = explode('@', $rotas[$acao]);
+$controlador = 'core\\controladores\\'.ucfirst($partes[0]);
+$metodo = $partes[1];
+
+$ctr = new $controlador();
+$ctr->$metodo();
 
 
-var_dump($partes);
+
+
+
+
+//echo "$controlador - $metodo";
+//var_dump($partes);
 
 ?>

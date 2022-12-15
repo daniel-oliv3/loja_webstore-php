@@ -71,8 +71,9 @@ composer update
 - Ex: web_006
 
 - http://localhost/loja_webstore-php/web_006/public/
-
-
+- http://localhost/loja_webstore-php/web_006/public/index.php?a=inicio
+- http://localhost/loja_webstore-php/web_006/public/index.php?a=loja
+- http://localhost/loja_webstore-php/web_006/public/index.php?a=carrinho
 
 
 
