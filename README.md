@@ -80,10 +80,27 @@ composer update
 
 - http://localhost/loja_webstore-php/web_007/public/
 
+```txt
+- MVC (Model, View, Controller)
+    - Model:  Dados/base de dados
+    - View:  Layout, HTML, CSS, JavaScript
+    - Controller:  Regras de negócio
+- VC
+```
 
+```txt
+- 1. Carregar e tratar dados (cálculos, base de dados)
+- 2. Apresentar o layout (views)
+```
 
-
-
+```php
+/*
+html_header.php
+nav_bar.php
+inicio.php
+html_footer.php
+*/
+```
 
 
 

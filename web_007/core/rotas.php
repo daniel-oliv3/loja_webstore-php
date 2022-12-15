@@ -4,7 +4,6 @@
 $rotas = [
     'inicio' => 'main@index',
     'loja' => 'main@loja',
-    'carrinho' => 'loja@carrinho',
 ];
 
 
@@ -33,10 +32,5 @@ $ctr->$metodo();
 
 
 
-
-
-
-//echo "$controlador - $metodo";
-//var_dump($partes);
 
 ?>
