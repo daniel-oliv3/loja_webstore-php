@@ -170,6 +170,40 @@ class Database{
         
     }
 
+    /*=======================================================================*/
+    /*========================== GENÉRICA ===================================*/
+    /*=======================================================================*/
+    public function statement($sql, $parametros = null){
+
+        //Verifica se e uma instrução diferente das anteriores 
+        if(preg_match("/^(SELECT|INSERT|UPDATE|DELETE|)/i", $sql)){
+            throw new Exception('Base de dados - Instrução inválida.');
+        }
+
+        //Ligar
+        $this->ligar();
+
+        //Comunicar
+        try{
+            //Comunicação com o banco de dados
+            if(!empty($parametros)){
+                $executar = $this->ligacao->prepare($sql);
+                $executar->execute($parametros);
+            } else {
+                $executar = $this->ligacao->prepare($sql);
+                $executar->execute();
+                $resultados = $executar->fetchAll(PDO::FETCH_CLASS);
+            }
+        }catch(PDOException $e){
+            //caso exista erro
+            return false;
+        }
+
+        //Desliga do banco de dados
+        $this->desligar();
+        
+    }
+
 
     /*=======================================================================*/
     /*=======================================================================*/
