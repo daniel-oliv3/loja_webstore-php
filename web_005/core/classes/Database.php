@@ -104,9 +104,70 @@ class Database{
         //Desliga do banco de dados
         $this->desligar();
 
-        //Devolver os resultados obtidos
-        return $resultados;
+    }
 
+    /*=======================================================================*/
+    public function update($sql, $parametros = null){
+
+        //Verifica se e uma instrução INSERT
+        if(!preg_match("/^UPDATE/i", $sql)){
+            throw new Exception('Base de dados - Não é uma instrução UPDATE.');
+        }
+
+        //Ligar
+        $this->ligar();
+
+        //Comunicar
+        try{
+            //Comunicação com o banco de dados
+            if(!empty($parametros)){
+                $executar = $this->ligacao->prepare($sql);
+                $executar->execute($parametros);
+            } else {
+                $executar = $this->ligacao->prepare($sql);
+                $executar->execute();
+                $resultados = $executar->fetchAll(PDO::FETCH_CLASS);
+            }
+        }catch(PDOException $e){
+            //caso exista erro
+            return false;
+        }
+
+        //Desliga do banco de dados
+        $this->desligar();
+        
+    }
+
+    /*=======================================================================*/
+    public function delete($sql, $parametros = null){
+
+        //Verifica se e uma instrução INSERT
+        if(!preg_match("/^DELETE/i", $sql)){
+            throw new Exception('Base de dados - Não é uma instrução DELETE.');
+        }
+
+        //Ligar
+        $this->ligar();
+
+        //Comunicar
+        try{
+            //Comunicação com o banco de dados
+            if(!empty($parametros)){
+                $executar = $this->ligacao->prepare($sql);
+                $executar->execute($parametros);
+            } else {
+                $executar = $this->ligacao->prepare($sql);
+                $executar->execute();
+                $resultados = $executar->fetchAll(PDO::FETCH_CLASS);
+            }
+        }catch(PDOException $e){
+            //caso exista erro
+            return false;
+        }
+
+        //Desliga do banco de dados
+        $this->desligar();
+        
     }
 
 
