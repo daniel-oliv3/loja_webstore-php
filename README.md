@@ -120,4 +120,20 @@ html_footer.php
 - Site: https://axios-http.com/ptbr/docs/intro
 
 
+### 9 - ALGUNS AJUSTAMENTOS E INÍCIO DO LAYOUT
+- Ex: web_009
+
+- http://localhost/loja_webstore-php/web_009/public/
+
+
+
+
+
+
+
+
+
+
+
+
 
