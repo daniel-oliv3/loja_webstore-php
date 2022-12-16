@@ -105,13 +105,16 @@ html_footer.php
 #### 8 - BOOTSTRAP 5 E FONTAWESOME 5
 - Ex: web_008
 
-- http://localhost/loja_webstore-php/web_007/public/
+- http://localhost/loja_webstore-php/web_008/public/
 
 **Bootstrap**
 - Site: https://getbootstrap.com/
+    - Downloads: https://getbootstrap.com/docs/5.2/getting-started/download/
 
 **Font-Awesome**
 - Site: https://fontawesome.com/
+    - Downloads: https://fontawesome.com/download
+    - Icons: https://fontawesome.com/icons
 
 **Axios**
 - Site: https://axios-http.com/ptbr/docs/intro
