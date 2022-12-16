@@ -97,13 +97,24 @@ composer update
 /*
 html_header.php
 nav_bar.php
-inicio.php
+pagina_inicio.php
 html_footer.php
 */
 ```
 
+#### 8 - BOOTSTRAP 5 E FONTAWESOME 5
+- Ex: web_008
 
+- http://localhost/loja_webstore-php/web_007/public/
 
+**Bootstrap**
+- Site: https://getbootstrap.com/
+
+**Font-Awesome**
+- Site: https://fontawesome.com/
+
+**Axios**
+- Site: https://axios-http.com/ptbr/docs/intro
 
 
 
