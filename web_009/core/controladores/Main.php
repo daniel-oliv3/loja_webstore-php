@@ -10,7 +10,7 @@ class Main {
     public function index(){
 
         $dados = [
-            'titulo' => 'Este é o titulo',
+            'titulo' => APP_NAME . " " . APP_VERSION,
             'clientes' => ['Daniel', 'Sapup3', 'Priscila']
         ];
 
@@ -19,8 +19,6 @@ class Main {
             'pagina_inicial',
             'layouts/html_footer',
         ], $dados);
-
-
     }
 
 

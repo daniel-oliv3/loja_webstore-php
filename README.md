@@ -125,7 +125,9 @@ html_footer.php
 
 - http://localhost/loja_webstore-php/web_009/public/
 
-
+```
+composer update
+```
 
 
 

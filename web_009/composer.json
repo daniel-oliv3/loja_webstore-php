@@ -6,7 +6,10 @@
         "psr-4": {
             "DanielOliveira\\LojaWebstorePhp\\": "src/",
             "core\\" : "core/"
-        }
+        },
+        "files": [
+            "config.php"
+        ]
     },
     "authors": [
         {
