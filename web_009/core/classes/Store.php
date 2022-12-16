@@ -4,6 +4,8 @@ namespace core\classes;
 
 use Exception;
 
+
+/*======= STORE =======*/
 class Store{
 
     /*==============================================================*/
@@ -25,11 +27,19 @@ class Store{
         }
     }
 
-}
 
-/*
-html_header.php
-nav_bar.php
-inicio.php
-html_footer.php
-*/
+    /*==============================================================*/
+    public static function clienteLogado(){
+        //Verifica se existe um cliente com sessão
+        return isset($_SESSION['cliente']);
+    }
+
+
+
+
+
+
+
+
+    /*==============================================================*/
+}

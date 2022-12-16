@@ -129,7 +129,9 @@ html_footer.php
 composer update
 ```
 
-
+- Limpar o Cache (Local Storage)
+    - Google Chrome:
+        - `F+12` `Application`/`Clear storage`/`Clear site data`
 
 
 

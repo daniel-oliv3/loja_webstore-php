@@ -11,7 +11,6 @@ class Main {
 
         $dados = [
             'titulo' => APP_NAME . " " . APP_VERSION,
-            'clientes' => ['Daniel', 'Sapup3', 'Priscila']
         ];
 
         Store::Layout([
