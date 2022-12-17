@@ -134,8 +134,10 @@ composer update
         - `F+12` `Application`/`Clear storage`/`Clear site data`
 
 
+### 10 - ARRANJO VISUAL E ROTAS DE NAVEGAÇÃO
+- Ex: web_010
 
-
+- http://localhost/loja_webstore-php/web_010/public/
 
 
 
