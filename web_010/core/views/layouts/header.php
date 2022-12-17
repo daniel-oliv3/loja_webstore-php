@@ -10,7 +10,7 @@
             <a href="?a=inicio">Início</a>
             <a href="?a=loja">Loja</a>
             
-            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="?a=carrinho"><i class="fas fa-shopping-cart"></i></a>
             <span class="badge bg-warning">10</span>
         </div>
     </div>
