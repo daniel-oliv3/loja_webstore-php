@@ -152,6 +152,29 @@ composer update
 - Criar utilizador com validação de email
 ```
 
+- Atualização da tabela `clientes`
 
+```sql
+CREATE TABLE `clientes` (
+	`id_cliente` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`email` VARCHAR(100) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+	`senha` VARCHAR(250) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+	`nome_completo` VARCHAR(250) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+	`endereco` VARCHAR(250) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+	`telefone` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+	`cidade` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+	`estado` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+	`purl` VARCHAR(100) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+	`activo` TINYINT(4) NULL DEFAULT '0',
+	`created_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+	`update_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	`deleted_at` DATETIME NULL DEFAULT NULL,
+	PRIMARY KEY (`id_cliente`) USING BTREE
+)
+COLLATE='utf8_unicode_ci'
+ENGINE=MyISAM
+AUTO_INCREMENT=4
+;
+```
 
 

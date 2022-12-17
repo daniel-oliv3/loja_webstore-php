@@ -31,6 +31,28 @@ class Main {
         ]);
     }
 
+    /*==============================================================*/
+    public function novo_cliente(){
+
+        //Verifica se ja existe sessão aberta
+        if(Store::clienteLogado()){
+            $this->index();
+            return;
+        }
+
+        $_SESSION['cliente'] = '1';
+        die('okeijo!');
+
+        //Apresenta a página de novo cliente
+        Store::Layout([
+            'layouts/html_header',
+            'layouts/header',
+            //'novo_cliente',
+            'layouts/footer',
+            'layouts/html_footer',
+        ]);
+    }
+
 
     /*==============================================================*/
     public function carrinho(){

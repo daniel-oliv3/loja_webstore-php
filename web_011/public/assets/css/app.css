@@ -1,4 +1,4 @@
-/* ======= APP CSS ======= */
+/* ======= APP.CSS ======= */
 
 
 /*======= Navegação =======*/
@@ -6,6 +6,19 @@
     background-color: rgb(154, 171, 194);
     color: black;
 }
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+
 
 
 /*======= Rodapé =======*/
