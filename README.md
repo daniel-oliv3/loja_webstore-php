@@ -140,6 +140,18 @@ composer update
 - http://localhost/loja_webstore-php/web_010/public/
 
 
+### 11 - CRIAÇÃO DA TABELA DE CLIENTES E CONSIDERAÇÕES IMPORTANTES
+- Ex: web_011
+
+- http://localhost/loja_webstore-php/web_011/public/
+
+
+```
+- Separar os links
+- Base de dados - tabela clientes
+- Criar utilizador com validação de email
+```
+
 
 
 
