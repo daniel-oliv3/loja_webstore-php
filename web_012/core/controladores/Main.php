@@ -40,14 +40,11 @@ class Main {
             return;
         }
 
-        $_SESSION['cliente'] = '1';
-        die('okeijo!');
-
         //Apresenta a página de novo cliente
         Store::Layout([
             'layouts/html_header',
             'layouts/header',
-            //'novo_cliente',
+            'criar_cliente',
             'layouts/footer',
             'layouts/html_footer',
         ]);
