@@ -62,11 +62,35 @@ class Main {
             'layouts/html_footer',
         ]);
     }
+
+
+    /*==============================================================*/
+    public function criar_cliente(){
+        //Verifica se ja existe sessão aberta
+        if(Store::clienteLogado()){
+            $this->index();
+            return;
+        }
+
+        //Verifica se ouve submisão de um formulario
+        if($_SERVER['REQUEST_METHOD'] != 'POST'){
+            $this->index();
+            return;
+        }
+
+        echo "Sapup3 na área!";
+
+        //Criação do novo cliente
+        //...
+
+
+        //echo '<pre>';
+        //print_r($_POST);
+    }
+
+
+    /*==============================================================*/
 }
-
-
-
-
 
 
 ?>
