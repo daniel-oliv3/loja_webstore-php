@@ -177,4 +177,7 @@ AUTO_INCREMENT=4
 ;
 ```
 
+### 12 - LAYOUT E ROTAS PARA CRIAÇÃO DE CLIENTE
+- Ex: web_012
 
+- http://localhost/loja_webstore-php/web_012/public/
