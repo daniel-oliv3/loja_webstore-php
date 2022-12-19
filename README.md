@@ -181,3 +181,12 @@ AUTO_INCREMENT=4
 - Ex: web_012
 
 - http://localhost/loja_webstore-php/web_012/public/
+
+
+### 13 - VALIDAÇÕES, CORREÇÕES E TESTES
+- Ex: web_013
+
+- http://localhost/loja_webstore-php/web_013/public/
+
+
+
