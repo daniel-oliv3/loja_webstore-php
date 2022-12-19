@@ -78,14 +78,16 @@ class Main {
             return;
         }
 
-        echo "Sapup3 na área!";
+        //Verifica se senha 1 e igual a senha 2
+        if($_POST['text_senha_1'] !== $_POST['text_senha_2']){
+            //As senhas são diferentes
+            $_SESSION['erro'] = 'As senhas não são iguais!';
+            $this->novo_cliente();
+            return;
+        }
 
-        //Criação do novo cliente
-        //...
+        die('Oqueijo!');
 
-
-        //echo '<pre>';
-        //print_r($_POST);
     }
 
 

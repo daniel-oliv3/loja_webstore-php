@@ -189,4 +189,11 @@ AUTO_INCREMENT=4
 - http://localhost/loja_webstore-php/web_013/public/
 
 
+```txt
+1* - Verificar se as senhas coincidem (senha_1 == senha_2)
+2* - Base de dados - Já existe outra conta com o mesmo email? (Verificação)
+
+3* - Registro
+
+```
 

@@ -48,6 +48,12 @@
                 <div class="my-4 text-center">
                     <input type="submit" value="Criar Conta" class="btn btn-primary">
                 </div>
+
+                <?php if(isset($_SESSION['erro'])): ?>
+                    <div class="alert alert-danger text-center p-2">
+                    <?= $_SESSION['erro'] ?>
+                    </div>
+                <?php endif; ?>
             </form>        
         </div>
     </div>
