@@ -194,6 +194,9 @@ AUTO_INCREMENT=4
 2* - Base de dados - Já existe outra conta com o mesmo email? (Verificação)
 
 3* - Registro
-
+    - Criar um purl
+    - Guardar os dados na tabela clientes
+    - Enviar um email com o purl para o cliente
+    - Apresentar uma mensagem indicando que deve validar o seu amail
 ```
 

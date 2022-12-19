@@ -2,7 +2,9 @@
 
 namespace core\controladores;
 
+use core\classes\Database;
 use core\classes\Store;
+
 
 /*====== MAIN =======*/
 class Main {
@@ -30,6 +32,7 @@ class Main {
             'layouts/html_footer',
         ]);
     }
+
 
     /*==============================================================*/
     public function novo_cliente(){
@@ -86,7 +89,20 @@ class Main {
             return;
         }
 
-        die('Oqueijo!');
+        //Verifica na base de dados se ja existe clientes com mesmo email
+        $bd = new Database();
+        $parametros = [
+            ':e' => strtolower(trim($_POST['text_email']))
+        ];
+        $resultados = $bd->select("SELECT email FROM clientes WHERE email = :e", $parametros);
+
+        //Se o cliente ja existe...
+        if(count($resultados) != 0){
+            $_SESSION['erro'] = 'Já existe um cliente com o mesmo email!';
+            $this->novo_cliente();
+            return;
+        }
+
 
     }
 
