@@ -35,7 +35,15 @@ class Store{
     }
 
 
+    /*==============================================================*/
+    public static function criarHash($num_caracteres = 12){
+        //Criar hashes
+        $chars = '01234567890123456789abcdefghijklmnopqrstuwxyzabcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZABCDEFGHIJKLMNOPQRSTUWXYZ';
+        return substr(str_shuffle($chars), 0, $num_caracteres);
+    }
 
+    
+    
 
 
 

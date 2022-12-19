@@ -104,8 +104,12 @@ class Main {
         }
 
 
-    }
+        //Cliente pronto para ser inserido na base de dados
+        $purl = Store::criarHash();
+        echo $purl;
 
+    }
+    
 
     /*==============================================================*/
 }
