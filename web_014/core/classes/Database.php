@@ -46,7 +46,6 @@ class Database{
         //ligar
         $this->ligar();
 
-
         $resultados = null;
 
         //Comunicar
@@ -94,7 +93,7 @@ class Database{
             } else {
                 $executar = $this->ligacao->prepare($sql);
                 $executar->execute();
-                $resultados = $executar->fetchAll(PDO::FETCH_CLASS);
+                //$resultados = $executar->fetchAll(PDO::FETCH_CLASS);
             }
         }catch(PDOException $e){
             //caso exista erro
@@ -108,7 +107,7 @@ class Database{
 
     /*=======================================================================*/
     public function update($sql, $parametros = null){
-        $sql = trim($sql);
+        //$sql = trim($sql);
         //Verifica se e uma instrução INSERT
         if(!preg_match("/^UPDATE/i", $sql)){
             throw new Exception('Base de dados - Não é uma instrução UPDATE.');
@@ -126,7 +125,7 @@ class Database{
             } else {
                 $executar = $this->ligacao->prepare($sql);
                 $executar->execute();
-                $resultados = $executar->fetchAll(PDO::FETCH_CLASS);
+                //$resultados = $executar->fetchAll(PDO::FETCH_CLASS);
             }
         }catch(PDOException $e){
             //caso exista erro

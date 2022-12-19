@@ -106,7 +106,39 @@ class Main {
 
         //Cliente pronto para ser inserido na base de dados
         $purl = Store::criarHash();
-        echo $purl;
+
+        $parametros = [
+            ':email' => strtolower(trim($_POST['text_email'])),
+            ':senha' => password_hash(trim($_POST['text_senha_1']), PASSWORD_DEFAULT),            
+            ':nome_completo' => trim($_POST['text_nome_completo']),
+            ':endereco' => trim($_POST['text_endereco']),
+            ':telefone' => trim($_POST['text_telefone']),
+            ':cidade' => trim($_POST['text_cidade']),
+            ':estado' => trim($_POST['text_estado']),
+            ':purl' => $purl,
+            ':activo' => 0,
+        ];
+        $bd->insert("INSERT INTO clientes VALUES(
+            0,
+            :email,
+            :senha,
+            :nome_completo,
+            :endereco,
+            :telefone,
+            :cidade,
+            :estado,
+            :purl,
+            :activo,
+            NOW(),
+            NOW(),
+            NULL
+        )
+        ", $parametros);
+
+
+        die("Inserido com sucesso!");
+
+
 
     }
     
