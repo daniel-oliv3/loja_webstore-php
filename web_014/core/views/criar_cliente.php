@@ -7,7 +7,7 @@
                 <!-- Nome -->
                 <div class="my-3">
                     <label>Nome Completo</label>                    
-                    <input type="text" class="form-control" name="text_name" placeholder="Digite Seu Nome Completo" required>
+                    <input type="text" class="form-control" name="text_nome_completo" placeholder="Digite Seu Nome Completo" required>
                 </div>
                 <!-- Email -->
                 <div class="my-3">
