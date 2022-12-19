@@ -200,3 +200,12 @@ AUTO_INCREMENT=4
     - Apresentar uma mensagem indicando que deve validar o seu amail
 ```
 
+### 14 - CRIAÇÃO DO PURL E REGISTO DO CLIENTE NA BASE DE DADOS
+- Ex: web_014
+
+- http://localhost/loja_webstore-php/web_014/public/
+
+
+
+
+
