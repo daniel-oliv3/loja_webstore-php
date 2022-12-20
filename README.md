@@ -205,7 +205,12 @@ AUTO_INCREMENT=4
 
 - http://localhost/loja_webstore-php/web_014/public/
 
+- Criar o link purl para enviar por email
+    - http://localhost/loja_webstore-php/web_014/public/?a=confirmar_email&purl=$purl
 
 
+### 15 - INTRODUÇÃO DE MODEL PARA SEPARAÇÃO DE LÓGICAS DE CÓDIGO
+- Ex: web_015
 
+- http://localhost/loja_webstore-php/web_015/public/
 
