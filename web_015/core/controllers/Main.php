@@ -1,6 +1,6 @@
 <?php
 
-namespace core\controladores;
+namespace core\controllers;
 
 use core\classes\Database;
 use core\classes\Store;
@@ -135,11 +135,9 @@ class Main {
         )
         ", $parametros);
 
-
-        //die("Inserido com sucesso!");
         
         //Criar o link purl para enviar por email
-        $link_purl = "http://localhost/loja_webstore-php/web_014/public/?a=confirmar_email&purl=$purl";
+        $link_purl = "http://localhost/loja_webstore-php/web_015/public/?a=confirmar_email&purl=$purl";
 
     }
     
