@@ -4,7 +4,7 @@ namespace core\controllers;
 
 use core\classes\Database;
 use core\classes\Store;
-
+use core\models\Clientes;
 
 /*====== MAIN =======*/
 class Main {
@@ -90,18 +90,14 @@ class Main {
         }
 
         //Verifica na base de dados se ja existe clientes com mesmo email
-        $bd = new Database();
-        $parametros = [
-            ':e' => strtolower(trim($_POST['text_email']))
-        ];
-        $resultados = $bd->select("SELECT email FROM clientes WHERE email = :e", $parametros);
-
-        //Se o cliente ja existe...
-        if(count($resultados) != 0){
+        $cliente = new Clientes();
+        if($cliente->verificar_email_existe($_POST['text_email_1'])){
             $_SESSION['erro'] = 'Já existe um cliente com o mesmo email!';
             $this->novo_cliente();
             return;
         }
+
+
 
 
         //Cliente pronto para ser inserido na base de dados
