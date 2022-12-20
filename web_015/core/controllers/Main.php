@@ -91,45 +91,15 @@ class Main {
 
         //Verifica na base de dados se ja existe clientes com mesmo email
         $cliente = new Clientes();
-        if($cliente->verificar_email_existe($_POST['text_email_1'])){
+        if($cliente->verificar_email_existe($_POST['text_email'])){
             $_SESSION['erro'] = 'Já existe um cliente com o mesmo email!';
             $this->novo_cliente();
             return;
         }
 
 
-
-
         //Cliente pronto para ser inserido na base de dados
-        $purl = Store::criarHash();
-
-        $parametros = [
-            ':email' => strtolower(trim($_POST['text_email'])),
-            ':senha' => password_hash(trim($_POST['text_senha_1']), PASSWORD_DEFAULT),            
-            ':nome_completo' => trim($_POST['text_nome_completo']),
-            ':endereco' => trim($_POST['text_endereco']),
-            ':telefone' => trim($_POST['text_telefone']),
-            ':cidade' => trim($_POST['text_cidade']),
-            ':estado' => trim($_POST['text_estado']),
-            ':purl' => $purl,
-            ':activo' => 0,
-        ];
-        $bd->insert("INSERT INTO clientes VALUES(
-            0,
-            :email,
-            :senha,
-            :nome_completo,
-            :endereco,
-            :telefone,
-            :cidade,
-            :estado,
-            :purl,
-            :activo,
-            NOW(),
-            NOW(),
-            NULL
-        )
-        ", $parametros);
+        $purl = $cliente->registrar_cliente();
 
         
         //Criar o link purl para enviar por email
