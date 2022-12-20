@@ -15,6 +15,10 @@ class ComposerStaticInitf91f0ec33cbad61b7684bcdd1df444a3
         array (
             'core\\' => 5,
         ),
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
         'D' => 
         array (
             'DanielOliveira\\LojaWebstorePhp\\' => 31,
@@ -25,6 +29,10 @@ class ComposerStaticInitf91f0ec33cbad61b7684bcdd1df444a3
         'core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
         'DanielOliveira\\LojaWebstorePhp\\' => 
         array (

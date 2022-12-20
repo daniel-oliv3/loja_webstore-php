@@ -98,7 +98,7 @@ class Main {
         }
 
 
-        //Cliente pronto para ser inserido na base de dados
+        //Inserir novo cliente na base de dados e devolver o purl
         $purl = $cliente->registrar_cliente();
 
         

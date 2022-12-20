@@ -17,5 +17,7 @@
             "email": "danielsapup3@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "phpmailer/phpmailer": "^6.7"
+    }
 }

@@ -219,3 +219,56 @@ AUTO_INCREMENT=4
 - Ex: web_016
 
 - http://localhost/loja_webstore-php/web_016/public/
+
+
+
+```txt
+- Adicionar o PHPMailer ao projeto
+    - Permite enviar emails a partir do PHP
+- Para enviar o email > conta de email real
+    - Criar uma conta no gmail + configurar a conta para enviar os emails
+```
+- https://support.google.com/mail/answer/7104828?authuser=2&hl=en&authuser=2&visit_id=638071622027830497-4109194600&rd=1
+
+**Packagist**
+- Site: https://packagist.org/
+
+**PHPMailer**
+- PHPMailer é uma classe completa de criação e transferência de e-mail para PHP
+    - Site: https://packagist.org/packages/phpmailer/phpmailer
+
+- Composer
+```
+composer require phpmailer/phpmailer
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
