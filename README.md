@@ -214,3 +214,8 @@ AUTO_INCREMENT=4
 
 - http://localhost/loja_webstore-php/web_015/public/
 
+
+### 16 - ADICIONAR PHPMAILER AO NOSSO PROJETO
+- Ex: web_016
+
+- http://localhost/loja_webstore-php/web_016/public/

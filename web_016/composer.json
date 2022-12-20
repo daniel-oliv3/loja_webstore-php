@@ -1,0 +1,21 @@
+{
+    "name": "daniel_oliveira/loja_webstore-php",
+    "description": "Loja Online em PHP",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "DanielOliveira\\LojaWebstorePhp\\": "src/",
+            "core\\" : "core/"
+        },
+        "files": [
+            "config.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Daniel Oliveira",
+            "email": "danielsapup3@gmail.com"
+        }
+    ],
+    "require": {}
+}
