@@ -296,6 +296,10 @@ try {
 }
 ```
 
+### 17 - ENVIO DE EMAIL PARA CONFIRMAÇÃO DE NOVA CONTA DE CLIENTE
+- Ex: web_017
+
+- http://localhost/loja_webstore-php/web_017/public/
 
 
 
