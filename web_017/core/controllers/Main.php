@@ -11,11 +11,6 @@ use core\models\Clientes;
 class Main {
     /*==============================================================*/
     public function index(){
-
-        $email = new EnviarEmail();
-        $email->enviar_email_confirmacao_novo_cliente();
-        die('Ok!');
-
         //Apresenta a página inicial
         Store::Layout([
             'layouts/html_header',
@@ -105,11 +100,21 @@ class Main {
 
 
         //Inserir novo cliente na base de dados e devolver o purl
+        $email_cliente = strtolower(trim($_POST['text_email']));
         $purl = $cliente->registrar_cliente();
-
         
-        //Criar o link purl para enviar por email
-        $link_purl = "http://localhost/loja_webstore-php/web_015/public/?a=confirmar_email&purl=$purl";
+        //Enviar do email para o cliente
+        $email = new EnviarEmail();
+        $resultado = $email->enviar_email_confirmacao_novo_cliente($email_cliente, $purl);
+
+        if($resultado){
+            echo 'Email enviado!';
+        }else {
+            echo 'Aconteceu um Erro!';
+        }
+
+
+
 
     }
     

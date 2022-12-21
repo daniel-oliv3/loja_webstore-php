@@ -304,7 +304,7 @@ try {
 
 
 ```txt
-PHPMailer em relação ás contas de Gmail, O gmail vai bloquear a partir de 22 de outubro deste ano 2022 a opção de desbloqueio de APPs consideradas menos seguras.
+PHPMailer em relação ás contas de Gmail, foi bloquear a partir de 22 de outubro deste ano 2022 a opção de desbloqueio de APPs consideradas menos seguras.
 ```
 
 

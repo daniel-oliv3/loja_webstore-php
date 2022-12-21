@@ -17,7 +17,7 @@ class EnviarEmail {
         //Envia um email para o novo cliente no sentido de confirmar o email
         
         //constroi o purl (link para validação do email)
-        $purl = 'https://www.minhaloja.com.br/?a=confirmar_email&purl=' . $purl;
+        $link = BASE_URL . '?a=confirmar_email&purl=' . $purl;
 
         $mail = new PHPMailer(true);
 
@@ -42,17 +42,17 @@ class EnviarEmail {
 
         //Mensagem
         $html = '<p>Seja bem-vindo a nossa loja ' . APP_NAME . '.</p>';
-        $html = '<p>Para poder entrar na nossa loja, necessita confirmar o seu email!</p>';
-        $html = '<p>Para confirmar o email, click no link abaixo:</p>';
-        $html = '<p><a href="#">Confirmar Email</a></p>';
-
+        $html .= '<p>Para poder entrar na nossa loja, necessita confirmar o seu email!</p>';
+        $html .= '<p>Para confirmar o email, click no link abaixo:</p>';
+        $html .= '<p><a href="'. $link .'">Confirmar Email</a></p>';
+        $html .= '<p><i><small>'. APP_NAME .'</small></i></p>';
 
         $mail->Body = $html;
 
         $mail->send();
-            echo 'Message has been sent';
+            return true;
         } catch (Exception $e) {
-            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            return false;
         }
 
     }
