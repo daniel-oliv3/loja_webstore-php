@@ -21,18 +21,18 @@ class EnviarEmail {
 
         try {
         //Server settings
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-        $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'phpstore.ecommerce@gmail.com';                     //SMTP username
-        $mail->Password   = 'JT043946034BR';                               //SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-        $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $mail->SMTPDebug = SMTP:: DEBUG_OFF; //DEBUG_SERVER;         
+        $mail->isSMTP();                                            
+        $mail->Host       = EMAIL_HOST;              
+        $mail->SMTPAuth   = true;         
+        $mail->Username   = EMAIL_FROM;
+        $mail->Password   = EMAIL_PASS; 
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->Port       = EMAIL_PORT; 
 
         //Recipients
-        $mail->setFrom('phpstore.ecommerce@gmail.com', 'PHPSTORE');
-        $mail->addAddress('sapupaaa@gmail.com');     //Add a recipient
+        $mail->setFrom(EMAIL_FROM, APP_NAME);
+        $mail->addAddress('sapupaaa@gmail.com'); 
 
 
         //Content

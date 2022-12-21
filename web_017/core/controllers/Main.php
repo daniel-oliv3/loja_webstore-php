@@ -14,8 +14,8 @@ class Main {
 
         $email = new EnviarEmail();
         $email->enviar_email_confirmacao_novo_cliente();
-        die('Okeijo!');
-        
+        die('Ok!');
+
         //Apresenta a página inicial
         Store::Layout([
             'layouts/html_header',

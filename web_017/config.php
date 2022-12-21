@@ -12,5 +12,16 @@ define('MYSQL_PASS',     '');
 define('MYSQL_CHARSET',  'utf8');
 
 
-// quGuTEtADoNo
+//Email
+define('EMAIL_HOST',   'smtp.gmail.com');
+define('EMAIL_FROM',   'phpstore.ecommerce@gmail.com');
+define('EMAIL_PASS',   'JT043946034BR');
+define('EMAIL_PORT',   '465');
+
+
+
+
+
+
+
 ?>

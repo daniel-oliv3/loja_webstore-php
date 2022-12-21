@@ -294,16 +294,16 @@ try {
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
-```
+
 
 ### 17 - ENVIO DE EMAIL PARA CONFIRMAÇÃO DE NOVA CONTA DE CLIENTE
 - Ex: web_017
 
 - http://localhost/loja_webstore-php/web_017/public/
 
-
-
-
+```
+PHPMailer em relação ás contas de Gmail, O gmail vai bloquear a partir de 22 de outubro deste ano 2022 a opção de desbloqueio de APPs consideradas menos seguras.
+```
 
 
 
