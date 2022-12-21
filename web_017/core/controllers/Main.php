@@ -3,6 +3,7 @@
 namespace core\controllers;
 
 use core\classes\Database;
+use core\classes\EnviarEmail;
 use core\classes\Store;
 use core\models\Clientes;
 
@@ -10,6 +11,11 @@ use core\models\Clientes;
 class Main {
     /*==============================================================*/
     public function index(){
+
+        $email = new EnviarEmail();
+        $email->enviar_email_confirmacao_novo_cliente();
+        die('Okeijo!');
+        
         //Apresenta a página inicial
         Store::Layout([
             'layouts/html_header',
