@@ -324,9 +324,14 @@ PHPMailer em relação ás contas de Gmail, foi bloqueado a partir de 22 de outu
 
 - http://localhost/loja_webstore-php/web_018/public/?a=confirmar_email&purl=WAec6mr0nJnF
 
+**PHPMailer character encoding issues**
+- https://stackoverflow.com/questions/2491475/phpmailer-character-encoding-issues
 
 
+### 19 - MELHORAMENTO DO FLUXO DE CONFIRMAÇÃO DE CONTA
+- Ex: web_019
 
+- http://localhost/loja_webstore-php/web_019/public/
 
 
 
