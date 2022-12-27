@@ -113,10 +113,38 @@ class Main {
             echo 'Aconteceu um Erro!';
         }
 
+    }
 
 
+    /*==============================================================*/
+    public function confirmar_email(){
+
+        //Verifica se ja existe sessão aberta
+        if(Store::clienteLogado()){
+            $this->index();
+            return;
+        }
+
+        //Verificar se existe na query string um purl
+        if(!isset($_GET['purl'])){
+            $this->index();
+            return;
+        }
+
+        $purl = $_GET['purl'];
+
+        //Verifica se o purl e valido
+        if(strlen($purl) != 12){
+            $this->index();
+            return;
+        }
+
+        $cliente = new Clientes();
+        $cliente->validar_email($purl);
 
     }
+
+
     
 
     /*==============================================================*/

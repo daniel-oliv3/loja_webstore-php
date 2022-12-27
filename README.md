@@ -304,7 +304,7 @@ try {
 
 
 ```txt
-PHPMailer em relação ás contas de Gmail, foi bloquear a partir de 22 de outubro de 2022 a opção de desbloqueio de APPs consideradas menos seguras.
+PHPMailer em relação ás contas de Gmail, foi bloqueado a partir de 22 de outubro de 2022, a opção de desbloqueio de APPs consideradas menos seguras.
 ```
 
 ### 18 - CONFIRMAÇÃO DO EMAIL E TESTES
@@ -312,7 +312,15 @@ PHPMailer em relação ás contas de Gmail, foi bloquear a partir de 22 de outub
 
 - http://localhost/loja_webstore-php/web_018/public/
 
-
+```txt
+1* Conectar a banco de dados
+2* Pesquisar a existencia de um cliente com o mesmo purl indicado
+    - Não existe? Erro
+    - Existe?
+        - A. Remover o purl do cliente
+        - B. Alterar o ativo = 1
+        - C. Apresentar uma mensagem de registro concluido com sucesso 
+```
 
 
 

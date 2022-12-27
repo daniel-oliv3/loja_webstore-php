@@ -24,6 +24,7 @@ class Clientes {
         }
     }
     
+
     /*==============================================================*/
     public function registrar_cliente(){
         //Registra o novo cliente na base de dados
@@ -66,7 +67,26 @@ class Clientes {
     }
 
 
+    /*==============================================================*/
+    public function validar_email($purl){
+        
+        //Validar o email do novo cliente
+        $bd = new Database();
+        $parametros = [
+            ':purl' => $purl
+        ];
+        $resultados = $bd->select("SELECT * FROM clientes WHERE purl = :purl", $parametros);
 
+        //verifica se foi encontrado o cliente
+        if(count($resultados) != 1){
+            return false;
+        }
+
+        $id_cliente = $resultados[0]->id_cliente;
+
+        die($id_cliente);
+
+    }
 
 
 
