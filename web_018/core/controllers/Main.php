@@ -56,19 +56,6 @@ class Main {
 
 
     /*==============================================================*/
-    public function carrinho(){
-        //Apresenta a página de carrinho
-        Store::Layout([
-            'layouts/html_header',
-            'layouts/header',
-            'carrinho',
-            'layouts/footer',
-            'layouts/html_footer',
-        ]);
-    }
-
-
-    /*==============================================================*/
     public function criar_cliente(){
         //Verifica se ja existe sessão aberta
         if(Store::clienteLogado()){
@@ -140,10 +127,28 @@ class Main {
         }
 
         $cliente = new Clientes();
-        $cliente->validar_email($purl);
+        $resultado = $cliente->validar_email($purl);
+
+        if($resultado){
+            echo 'Conta validada com sucesso!';
+        }else {
+            echo 'Erro: não foi posivel validar a conta!';
+        }
 
     }
 
+
+    /*==============================================================*/
+    public function carrinho(){
+        //Apresenta a página de carrinho
+        Store::Layout([
+            'layouts/html_header',
+            'layouts/header',
+            'carrinho',
+            'layouts/footer',
+            'layouts/html_footer',
+        ]);
+    }
 
     
 

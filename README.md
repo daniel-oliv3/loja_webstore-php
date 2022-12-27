@@ -322,6 +322,8 @@ PHPMailer em relação ás contas de Gmail, foi bloqueado a partir de 22 de outu
         - C. Apresentar uma mensagem de registro concluido com sucesso 
 ```
 
+- http://localhost/loja_webstore-php/web_018/public/?a=confirmar_email&purl=WAec6mr0nJnF
+
 
 
 
