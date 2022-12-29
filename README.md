@@ -349,9 +349,8 @@ http://localhost/loja_webstore-php/web_019/public/?a=confirmar_email&purl=8xh9ew
 
 - http://localhost/loja_webstore-php/web_020/public/
 
-
-
-
+- login_frm.php
+- http://localhost/loja_webstore-php/web_020/public/?a=login
 
 
 

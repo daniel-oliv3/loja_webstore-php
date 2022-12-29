@@ -162,7 +162,16 @@ class Main {
 
     /*==============================================================*/
     public function login(){
-        echo 'Formulário de login';
+        //Apresenta a página de login
+        Store::Layout([
+            'layouts/html_header',
+            'layouts/header',
+            'login_frm',
+            'layouts/footer',
+            'layouts/html_footer',
+        ]);
+
+        return;
     }
 
 
