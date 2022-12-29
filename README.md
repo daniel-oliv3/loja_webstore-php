@@ -344,6 +344,10 @@ TRUNCATE clientes
 http://localhost/loja_webstore-php/web_019/public/?a=confirmar_email&purl=8xh9ewBLoH0P
 ```
 
+### 20 - INICIO DA CONSTRUÇÃO DO LOGIN
+- Ex: web_020
+
+- http://localhost/loja_webstore-php/web_020/public/
 
 
 
