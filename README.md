@@ -167,7 +167,7 @@ CREATE TABLE `clientes` (
 	`purl` VARCHAR(100) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
 	`activo` TINYINT(4) NULL DEFAULT '0',
 	`created_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
-	`update_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	`updated_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 	`deleted_at` DATETIME NULL DEFAULT NULL,
 	PRIMARY KEY (`id_cliente`) USING BTREE
 )
@@ -334,7 +334,15 @@ PHPMailer em relação ás contas de Gmail, foi bloqueado a partir de 22 de outu
 - http://localhost/loja_webstore-php/web_019/public/
 
 
+```sql
+TRUNCATE clientes
+```
 
+- Validação de nova conta(PHPMailer não funciona)
+- Inserir o codigo Purl `8xh9ewBLoH0P`
+```
+http://localhost/loja_webstore-php/web_019/public/?a=confirmar_email&purl=8xh9ewBLoH0P
+```
 
 
 
