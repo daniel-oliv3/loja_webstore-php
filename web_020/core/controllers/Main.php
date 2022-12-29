@@ -162,7 +162,14 @@ class Main {
 
     /*==============================================================*/
     public function login(){
-        //Apresenta a página de login
+        //Verificar se o login é válido
+        if(Store::clienteLogado()){
+            Store::redirect();
+            return;
+        }
+
+
+        //Apresenta a página de formulario de login
         Store::Layout([
             'layouts/html_header',
             'layouts/header',
@@ -170,8 +177,21 @@ class Main {
             'layouts/footer',
             'layouts/html_footer',
         ]);
+    }
 
-        return;
+
+    /*==============================================================*/
+    public function login_submit(){
+        //Verificar se ja existe um utilizador valido
+        if(Store::clienteLogado()){
+            Store::redirect();
+            return;
+        }
+
+        //verifica se foi efetuado o post do formulario de login
+
+
+        //verifica se o login e valido
     }
 
 

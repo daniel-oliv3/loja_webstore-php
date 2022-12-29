@@ -10,6 +10,7 @@ $rotas = [
     'criar_cliente' => 'main@criar_cliente',
     'confirmar_email' => 'main@confirmar_email',
     'login' => 'main@login',
+    'login_submit' => 'main@login_submit',
     
     'carrinho' => 'main@carrinho',
 ];
