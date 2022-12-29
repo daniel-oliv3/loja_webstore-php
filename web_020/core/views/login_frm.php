@@ -11,16 +11,17 @@
                 </div>
                 <div class="my-3">
                     <label>Senha</label>
-                    <input type="password" class="form-control" name="text_password" placeholder="Digite sua senha" required>
+                    <input type="password" class="form-control" name="text_senha" placeholder="Digite sua senha" required>
                 </div>
                 <div class="my-3 text-center">
                     <input type="submit" value="Entrar" class="btn btn-primary">
                 </div>
             </form>
 
-            <?php if(true): ?>
+            <?php if(isset($_SESSION['erro'])): ?>
                 <div class="alert alert-danger text-center">
-                    Mensagem de error
+                    <?= $_SESSION['erro'] ?>
+                    <?php unset($_SESSION['error']); ?>
                 </div>
             <?php endif; ?>
 

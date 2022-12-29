@@ -189,9 +189,20 @@ class Main {
         }
 
         //verifica se foi efetuado o post do formulario de login
+        if($_SERVER['REQUEST_METHOD'] != 'POST'){
+            Store::redirect();
+            return;
+        }
 
+        //Validar se os campos vierem corretamente preenchidos
+        if(!isset($_POST['text_usuario']) || !isset($_POST['text_senha']) || !filter_var(trim($_POST['text_usuario']), FILTER_VALIDATE_EMAIL)){
+            //erro de preenchimento de formulario
+            $_SESSION['erro'] = 'Login inválido';
+            Store::redirect('login');
+            return;
+        }
 
-        //verifica se o login e valido
+        echo 'Oqueijo';
     }
 
 
