@@ -95,7 +95,7 @@ class Main {
         $resultado = $email->enviar_email_confirmacao_novo_cliente($email_cliente, $purl);
 
         if($resultado){
-            //Apresenta a página inicial
+            //Apresenta o layout para informar o envio do email
             Store::Layout([
                 'layouts/html_header',
                 'layouts/header',
@@ -103,6 +103,8 @@ class Main {
                 'layouts/footer',
                 'layouts/html_footer',
             ]);
+            return;
+
             //echo 'Email enviado!';
         }else {
             echo 'Aconteceu um Erro!';
@@ -138,11 +140,29 @@ class Main {
         $resultado = $cliente->validar_email($purl);
 
         if($resultado){
-            echo 'Conta validada com sucesso!';
+            //Apresenta o layout para informar a conta foi confirmada com sucesso
+            Store::Layout([
+                'layouts/html_header',
+                'layouts/header',
+                'conta_confirmada_sucesso',
+                'layouts/footer',
+                'layouts/html_footer',
+            ]);
+            return;
+            //echo 'Conta validada com sucesso!';
         }else {
-            echo 'Erro: não foi posivel validar a conta!';
+            //Redirecionar para a pagina inicial
+            Store::redirect();
+            
+            //echo 'Erro: não foi posivel validar a conta!';
         }
 
+    }
+
+
+    /*==============================================================*/
+    public function login(){
+        echo 'Formulário de login';
     }
 
 

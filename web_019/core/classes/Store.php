@@ -43,6 +43,11 @@ class Store{
     }
 
     
+    /*==============================================================*/
+    public static function redirect($rota = ''){
+        //Faz o redirecionamento para a URL desejada (rota)
+        header("Location: " . BASE_URL . "?a-$rota");
+    }
     
 
 
