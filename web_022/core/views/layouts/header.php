@@ -18,15 +18,16 @@ use core\classes\Store;
 
             <!-- Verifica se existe cliente na sessão -->
             <?php if(Store::clienteLogado()): ?>
-                <a href="?a=minha_conta" class="nav-item">Minha conta</a>
-                <a href="?a=logout" class="nav-item">Logout</a>
+                <!--<a href="?a=minha_conta" class="nav-item">Conta usuario</a>-->
+                <i class="fas fa-user"></i> <?= $_SESSION['usuario'] ?>
+                <a href="?a=logout" class="nav-item"><i class="fas fa-sign-out-alt"></i></a>
             <?php else: ?>
                 <a href="?a=login" class="nav-item">Login</a>
                 <a href="?a=novo_cliente" class="nav-item">Criar conta</a>
             <?php endif; ?>
 
             <a href="?a=carrinho"><i class="fas fa-shopping-cart"></i></a>
-            <span class="badge bg-warning">10</span>
+            <span class="badge bg-warning"></span>
         </div>
     </div>
 </div>

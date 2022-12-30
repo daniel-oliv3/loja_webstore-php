@@ -230,6 +230,19 @@ class Main {
 
 
     /*==============================================================*/
+    public function logout(){
+        //Remove as variaveis da sessão
+        unset($_SESSION['cliente']);
+        unset($_SESSION['usuario']);
+        unset($_SESSION['nome_cliente']);
+
+        //Redireciona para o inicio da loja
+        Store::redirect();
+    }
+
+
+
+    /*==============================================================*/
     public function carrinho(){
         //Apresenta a página de carrinho
         Store::Layout([
