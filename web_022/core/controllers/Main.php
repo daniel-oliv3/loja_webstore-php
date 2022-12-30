@@ -217,13 +217,15 @@ class Main {
             Store::redirect('login');
             return;
         }else {
-            //login valido
-            //$_SESSION['cliente'] = $resultado;
-            echo '<pre>';
-            print_r($resultado);
+            //login valido, coloca os dados na sessão
+            $_SESSION['cliente'] = $resultado->id_cliente;
+            $_SESSION['usuario'] = $resultado->email;
+            $_SESSION['nome_cliente'] = $resultado->nome_completo;
+
+            //Redirecionamento para o inicio da nossa loja
+            Store::redirect();
+            
         }
-
-
     }
 
 

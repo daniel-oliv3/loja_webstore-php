@@ -108,7 +108,7 @@ class Clientes {
         ];
 
         $bd = new Database();
-        $resultados = $bd->select("SELECT * FROM clientes WHERE email = :usuario AND activo = 1 AND deleted_at IS NOT NULL", $parametros);
+        $resultados = $bd->select("SELECT * FROM clientes WHERE email = :usuario AND activo = 1 AND deleted_at IS NULL", $parametros);
 
         if(count($resultados) != 1){
             return false;

@@ -9,8 +9,11 @@ $rotas = [
     'novo_cliente' => 'main@novo_cliente',
     'criar_cliente' => 'main@criar_cliente',
     'confirmar_email' => 'main@confirmar_email',
+
+    //login
     'login' => 'main@login',
     'login_submit' => 'main@login_submit',
+    'logout' => 'main@logout',
     
     'carrinho' => 'main@carrinho',
 ];
