@@ -366,3 +366,8 @@ http://localhost/loja_webstore-php/web_019/public/?a=confirmar_email&purl=8xh9ew
 - http://localhost/loja_webstore-php/web_022/public/
 
 
+
+### 23 - CRIAÇÃO DA BASE DE DADOS DOS PRODUTOS
+- Ex: web_023
+
+- http://localhost/loja_webstore-php/web_023/public/
