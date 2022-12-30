@@ -85,9 +85,6 @@ class Clientes {
         //Foi encontrada esse cliente com o purl indicado
         $id_cliente = $resultados[0]->id_cliente;
 
-        //die($id_cliente);
-        //die($resultados[0]->nome_completo);
-
         //Atualizar os dados do cliente
         $parametros = [
             ':id_cliente' => $id_cliente

@@ -371,3 +371,26 @@ http://localhost/loja_webstore-php/web_019/public/?a=confirmar_email&purl=8xh9ew
 - Ex: web_023
 
 - http://localhost/loja_webstore-php/web_023/public/
+
+- Criação da tabela `produtos`
+```sql
+/* ======= TABELA PRODUTOS ======= */
+CREATE TABLE `produtos` (
+	`id_produto` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`categoria` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+	`nome_produto` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+	`descricao` VARCHAR(200) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+	`imagem` VARCHAR(200) NULL DEFAULT NULL COLLATE 'utf8_unicode_ci',
+	`preco` DECIMAL(6,2) NULL DEFAULT NULL,
+	`estoque` INT(11) NULL DEFAULT NULL,
+	`visivel` TINYINT(4) NULL DEFAULT NULL,
+	`created_at` DATETIME NULL DEFAULT NULL,
+	`updated_at` DATETIME NULL DEFAULT NULL,
+	`deleted_at` DATETIME NULL DEFAULT NULL,
+	PRIMARY KEY (`id_produto`) USING BTREE
+)
+COLLATE='utf8_unicode_ci'
+ENGINE=MyISAM
+;
+
+```
