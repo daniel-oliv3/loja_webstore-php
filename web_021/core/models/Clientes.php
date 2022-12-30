@@ -100,6 +100,38 @@ class Clientes {
     }
 
 
+    /*==============================================================*/
+    public function validar_login($usuario, $senha){
+        //Verifica se o login e valido
+        $parametros = [
+            ':usuario' => $usuario
+        ];
+
+        $bd = new Database();
+        $resultados = $bd->select("SELECT * FROM clientes WHERE email = :usuario AND activo = 1 AND deleted_at IS NOT NULL", $parametros);
+
+        if(count($resultados) != 1){
+            return false;
+        }else {
+            //temos usuario. vamos ver sua senha
+            $usuario = $resultados[0];
+
+            //Verifica a senha
+            if(!password_verify($senha, $usuario->senha) ){
+                
+                //senha invalida
+                return false;
+            }else {
+                //Login valido
+                return $usuario;
+            }
+
+
+        }
+
+
+    }
+
 
 
 

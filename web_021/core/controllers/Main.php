@@ -202,7 +202,28 @@ class Main {
             return;
         }
 
-        echo 'Oqueijo';
+        //Prepara os dados para a model
+        $usuario = trim(strtolower($_POST['text_usuario']));
+        $senha = trim($_POST['text_senha']);
+
+        //carrega o model e verifica se o login e valido
+        $cliente = new Clientes();
+        $resultado = $cliente->validar_login($usuario, $senha);
+
+        //Analisa o resultado
+        if(is_bool($resultado)){
+            //login invalido
+            $_SESSION['error'] = 'Login inválido';
+            Store::redirect('login');
+            return;
+        }else {
+            //login valido
+            //$_SESSION['cliente'] = $resultado;
+            echo '<pre>';
+            print_r($resultado);
+        }
+
+
     }
 
 
