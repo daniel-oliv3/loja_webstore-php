@@ -353,6 +353,10 @@ http://localhost/loja_webstore-php/web_019/public/?a=confirmar_email&purl=8xh9ew
 - http://localhost/loja_webstore-php/web_020/public/?a=login
 
 
+### 21 - DESENVOLVIMENTO DO LOGIN COM ERRO NO FINAL DO PROCESSO
+- Ex: web_021
+
+- http://localhost/loja_webstore-php/web_021/public/
 
 
 
