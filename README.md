@@ -394,3 +394,23 @@ ENGINE=MyISAM
 ;
 
 ```
+
+
+### 24 - CONSTRUÇÃO DO LAYOUT DA PÁGINA DE PRODUTOS
+- Ex: web_024
+
+- http://localhost/loja_webstore-php/web_024/public/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
