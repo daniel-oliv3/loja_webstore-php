@@ -407,8 +407,10 @@ ENGINE=MyISAM
 
 - http://localhost/loja_webstore-php/web_025/public/
 
-
-
+- CATEGORIAS
+- Todos - http://localhost/loja_webstore-php/web_025/public/?a=loja&c=todos
+- Homem - http://localhost/loja_webstore-php/web_025/public/?a=loja&c=homem
+- Mulher - http://localhost/loja_webstore-php/web_025/public/?a=loja&c=mulher
 
 
 

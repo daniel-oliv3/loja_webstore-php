@@ -29,7 +29,15 @@ class Main {
 
         //Buscar a lista de produtos disponiveis
         $produtos = new Produtos();
-        $lista_produtos = $produtos->lista_produtos_disponiveis();
+
+        //Analisa que categoria mostrar
+        $c = 'todos';
+        if(isset($_GET['c'])){
+            $c = $_GET['c'];
+        }
+
+
+        $lista_produtos = $produtos->lista_produtos_disponiveis($c);
 
         Store::Layout([
             'layouts/html_header',
