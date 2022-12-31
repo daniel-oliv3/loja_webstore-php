@@ -402,7 +402,10 @@ ENGINE=MyISAM
 - http://localhost/loja_webstore-php/web_024/public/
 
 
+### 25 - SIMPLIFICAR O LAYOUT E A QUESTÃO DAS CATEGORIAS
+- Ex: web_025
 
+- http://localhost/loja_webstore-php/web_025/public/
 
 
 

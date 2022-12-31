@@ -1,0 +1,37 @@
+/* ======= APP.CSS ======= */
+
+* {
+    box-shadow: inset 0px 0px 1px rgba(255, 0, 0, 1);
+}
+
+.espaco-fundo {
+    margin-bottom: 80px;
+}
+
+/*======= Navegação =======*/
+.navegacao {
+    background-color: rgb(154, 171, 194);
+    color: black;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+
+
+
+/*======= Rodapé =======*/
+.rodape {
+    background-color: rgb(60, 74, 82);
+    color: white;
+}
+
+
