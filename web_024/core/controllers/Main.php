@@ -31,15 +31,13 @@ class Main {
         $produtos = new Produtos();
         $lista_produtos = $produtos->lista_produtos_disponiveis();
 
-        Store::printData($lista_produtos);
-
         Store::Layout([
             'layouts/html_header',
             'layouts/header',
             'loja',
             'layouts/footer',
             'layouts/html_footer',
-        ]);
+        ], ['produtos' => $lista_produtos ]);
     }
 
 

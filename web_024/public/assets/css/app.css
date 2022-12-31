@@ -1,5 +1,12 @@
 /* ======= APP.CSS ======= */
 
+* {
+    box-shadow: inset 0px 0px 1px rgba(255, 0, 0, 1);
+}
+
+.espaco-fundo {
+    margin-bottom: 80px;
+}
 
 /*======= Navegação =======*/
 .navegacao {
@@ -26,4 +33,5 @@
     background-color: rgb(60, 74, 82);
     color: white;
 }
+
 
