@@ -412,10 +412,15 @@ ENGINE=MyISAM
 - Homem - http://localhost/loja_webstore-php/web_025/public/?a=loja&c=homem
 - Mulher - http://localhost/loja_webstore-php/web_025/public/?a=loja&c=mulher
 
+- Consulta SQL
+```sql
+SELECT DISTINCT categoria FROM produtos;
+```
 
+### 26 - TRABALHAR COM CATEGORIAS DINAMICAMENTE
+- Ex: web_026
 
-
-
+- http://localhost/loja_webstore-php/web_026/public/
 
 
 

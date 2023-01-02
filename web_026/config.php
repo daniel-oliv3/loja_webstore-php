@@ -3,7 +3,7 @@
 define('APP_NAME',          'PHPSTORE');
 define('APP_VERSION',       '1.0.0');
 
-define('BASE_URL',       'http://localhost/loja_webstore-php/web_025/public/');
+define('BASE_URL',       'http://localhost/loja_webstore-php/web_026/public/');
 
 
 //MySQL 
