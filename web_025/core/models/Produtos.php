@@ -13,10 +13,10 @@ class Produtos {
         $bd = new Database();
 
         $sql = "SELECT * FROM produtos ";
-        $sql .= "WHERE visivel = 1";
+        $sql .= "WHERE visivel = 1 ";
 
         if($categoria == 'homem' || $categoria == 'mulher'){
-            $sql .= "AND categoria = '$categoria'";
+            $sql .= " AND categoria = '$categoria'";
         }
 
         //$produtos = $bd->select("SELECT * FROM produtos WHERE visivel = 1");
