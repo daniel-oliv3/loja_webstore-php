@@ -3,9 +3,13 @@
     <!-- Titulo da página -->
     <div class="row">
         <div class="col-12 text-center my-4">
+
             <a href="?a=loja&c=todos" class="btn btn-primary">Todos</a>
-            <a href="?a=loja&c=homem" class="btn btn-primary">Homem</a>
-            <a href="?a=loja&c=mulher" class="btn btn-primary">Mulher</a>
+            <?php foreach($categorias as $categoria):?>
+                <a href="?a=loja&c=<?= $categoria; ?>" class="btn btn-primary">
+                    <?= ucfirst($categoria) ?>
+                </a>
+            <?php endforeach; ?>
         </div>
     </div>
 
