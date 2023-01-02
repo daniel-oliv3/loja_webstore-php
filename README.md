@@ -422,5 +422,9 @@ SELECT DISTINCT categoria FROM produtos;
 
 - http://localhost/loja_webstore-php/web_026/public/
 
-
+- Expressões regulares
+- Trocar o underscore `_` por espaço em branco ` `
+```php
+<?= ucfirst(preg_replace("/\_/", " ", $categoria)) ?>
+```
 
