@@ -428,3 +428,11 @@ SELECT DISTINCT categoria FROM produtos;
 <?= ucfirst(preg_replace("/\_/", " ", $categoria)) ?>
 ```
 
+### 27 - AXIOS PARA ADICIONAR PRODUTOS AO CARRINHO
+- Ex: web_027
+
+- http://localhost/loja_webstore-php/web_027/public/
+
+
+
+
