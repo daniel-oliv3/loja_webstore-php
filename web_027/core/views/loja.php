@@ -1,4 +1,8 @@
-<?php //$produto = $produtos[0]; ?>
+<?php //$produto = $produtos[0]; 
+
+print_r($_SESSION);
+
+?>
 <div class="container"></div>
     <!-- Titulo da página -->
     <div class="row">
@@ -28,7 +32,7 @@
                     <h5><?= $produto->nome_produto ?></h5>
                     <h6><?= 'R$ ' . preg_replace("/\./", ",", $produto->preco)?></h6>
                     <div>
-                        <button class="btn btn-info btn-sm"><i class="fas fa-shopping-cart me-2"></i>Adicionar ao carrinho</button>
+                        <button class="btn btn-warning btn-sm" onclick="adicionar_carrinho(<?= $produto->id_produto ?>)"><i class="fas fa-shopping-cart me-2"></i>Adicionar ao carrinho</button>
                     </div>
                 </div>
             </div>
