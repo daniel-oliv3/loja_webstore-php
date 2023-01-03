@@ -449,3 +449,7 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 <?= preg_replace("/\./", ",", $code) ?>
 ```
 
+### 28 - GESTÃO DO CARRINHO E ERRO POR RESOLVER NO FINAL
+- Ex: web_028
+
+- http://localhost/loja_webstore-php/web_028/public/
