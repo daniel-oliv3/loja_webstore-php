@@ -1,9 +1,4 @@
-<?php //$produto = $produtos[0]; 
-
-print_r($_SESSION);
-
-?>
-<div class="container"></div>
+<div class="container">
     <!-- Titulo da página -->
     <div class="row">
         <div class="col-12 text-center my-4">

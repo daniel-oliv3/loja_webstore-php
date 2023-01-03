@@ -1,5 +1,5 @@
 <?php $produto = $produtos[0]; ?>
-<div class="container-fluid"></div>
+<div class="container-fluid">
     <!-- Titulo da página -->
     <div class="row">
         <div class="col-12">
