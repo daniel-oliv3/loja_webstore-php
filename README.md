@@ -453,3 +453,35 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 - Ex: web_028
 
 - http://localhost/loja_webstore-php/web_028/public/
+
+```txt
+1* - Puxar o array do carrinho da sessão para o PHP
+2* - Adicionar(gerir) o array do carrinho
+3* - Recolocar o array na sessão
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

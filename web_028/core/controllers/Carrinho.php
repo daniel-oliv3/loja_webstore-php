@@ -14,12 +14,33 @@ use core\models\Produtos;
 class Carrinho {
     /*==============================================================*/
     public function adicionar_carrinho(){
-        
+        //Vai buscar o id_produto a query string
         $id_produto = $_GET['id_produto'];
-        $_SESSION['teste'] = $id_produto;
+        //adiciona(gestão) da variavel de sessão do carrinho
+        $carrinho = [];
 
-        echo 'Adicionado o produto ' . $id_produto . ' ao carrinho!';
+        if(isset($_SESSION['carrinho'])){
+            $carrinho = $_SESSION['carrinho'];
+        }
+                
+        //Adicionar o produto ao carrinho
+        if(key_exists($id_produto, $carrinho)){
 
+            //Já existe o produto. acrescenta mais uma unidade
+            $carrinho[$id_produto]++;
+
+        }else {
+            //adiciona novo produto ao carrinho
+            array_push($carrinho, [$id_produto => 1]);
+        }
+        //atualiza od dados do carrinho na sessão
+        $_SESSION['carrinho'] = $carrinho;
+        //devolve a resposta (número de produtos do carrinho)
+        $total_produtos = 0;
+        foreach($carrinho as $produto_quantidade){
+            $total_produtos += $produto_quantidade;
+        }
+        echo $total_produtos;
     }
 
 
