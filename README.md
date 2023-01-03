@@ -422,8 +422,8 @@ SELECT DISTINCT categoria FROM produtos;
 
 - http://localhost/loja_webstore-php/web_026/public/
 
-- Expressões regulares
-- Trocar o underscore `_` por espaço em branco ` `
+**Expressões regulares**
+- Substituir o underscore `_` por um espaço em branco ` `
 ```php
 <?= ucfirst(preg_replace("/\_/", " ", $categoria)) ?>
 ```
@@ -433,6 +433,19 @@ SELECT DISTINCT categoria FROM produtos;
 
 - http://localhost/loja_webstore-php/web_027/public/
 
+**Axios**
+- Promise based HTTP client for the browser and node.js - GitHub
+    - Site: https://github.com/axios/axios
+
+```
+https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
+```
+- Colar o link no navegador, salvar o conteúdo no arquivo `public/assets/js`
 
 
+**Expressões regulares**
+- Substituir o ponto `.` por uma virgula `,`
+```php
+<?= preg_replace("/\./", ",", $produto->preco) . '$' ?>
+```
 
