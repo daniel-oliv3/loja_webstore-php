@@ -425,7 +425,7 @@ SELECT DISTINCT categoria FROM produtos;
 **Expressões regulares**
 - Substituir o underscore `_` por um espaço em branco ` `
 ```php
-<?= ucfirst(preg_replace("/\_/", " ", $categoria)) ?>
+<?= ucfirst(preg_replace("/\_/", " ", $code)) ?>
 ```
 
 ### 27 - AXIOS PARA ADICIONAR PRODUTOS AO CARRINHO
@@ -440,12 +440,12 @@ SELECT DISTINCT categoria FROM produtos;
 ```
 https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 ```
-- Colar o link no navegador, salvar o conteúdo no arquivo `public/assets/js`
+- Colar o link no navegador, salvar o conteúdo do arquivo no projeto `public/assets/js`
 
 
 **Expressões regulares**
 - Substituir o ponto `.` por uma virgula `,`
 ```php
-<?= preg_replace("/\./", ",", $produto->preco) . '$' ?>
+<?= preg_replace("/\./", ",", $code) ?>
 ```
 

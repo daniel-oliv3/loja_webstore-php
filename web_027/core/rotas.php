@@ -14,7 +14,8 @@ $rotas = [
     'login' => 'main@login',
     'login_submit' => 'main@login_submit',
     'logout' => 'main@logout',
-    
+
+    //carrinho
     'carrinho' => 'main@carrinho',
 ];
 
