@@ -1,7 +1,13 @@
 <?php
 use core\classes\Store;
 
-//$_SESSION['cliente'] = 1;
+//Calcula o numero de produtos no carrinho
+$total_produtos = 0;
+if(isset($_SESSION['carrinho'])){
+    foreach($_SESSION['carrinho'] as $quantidade){
+        $total_produtos += $quantidade;
+    }
+}
 ?>
 <!-- ======= HEADER ======= -->
 <div class="container-fluid navegacao"> 
@@ -27,7 +33,7 @@ use core\classes\Store;
             <?php endif; ?>
 
             <a href="?a=carrinho"><i class="fas fa-shopping-cart"></i></a>
-            <span class="badge bg-warning" id="carrinho"></span>
+            <span class="badge bg-warning" id="carrinho"><?= $total_produtos == 0 ? '' : $total_produtos ?></span>
         </div>
     </div>
 </div>
