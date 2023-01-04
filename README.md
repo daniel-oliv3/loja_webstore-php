@@ -460,14 +460,19 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 3* - Recolocar o array na sessão
 ```
 
+### 29 - CARRINHO A FUNCIONAR COM TOTAL DE PRODUTOS
+- Ex: web_029
+
+- http://localhost/loja_webstore-php/web_029/public/
+
 - Axios - Response Schema
 - Site: https://github.com/axios/axios#response-schema
 
 
+### 30 - MECANISMOS DE SEGURANÇA NO NOSSO CARRINHO E MAIS UM ERRO PARA RESOLVER
+- Ex: web_030
 
-
-
-
+- http://localhost/loja_webstore-php/web_030/public/
 
 
 
