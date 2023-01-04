@@ -42,7 +42,17 @@ class Produtos {
     }
 
 
+    /*==============================================================*/
+    public function verificar_estoque_produto($id_produto){
+        $bd = new Database();
+        $parametros = [
+            'id_produto' => $id_produto
+        ];
 
+        $resultados = $bd->select("SELECT * FROM produtos WHERE id_produto = :id_produto AND visivel = 1 AND estoque > 0");
+
+        return count($resultados) != 0 ? true : false;
+    }
 
 
 

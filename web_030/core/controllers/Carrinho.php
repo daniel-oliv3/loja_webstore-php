@@ -15,7 +15,21 @@ class Carrinho {
     /*==============================================================*/
     public function adicionar_carrinho(){
         //Vai buscar o id_produto a query string
+        if(!isset($_GET['id_produto'])){
+            header('Location: ' . BASE_URL . 'index.php?a=loja');
+            return;
+        }
+
+        //define o id do produto
         $id_produto = $_GET['id_produto'];
+
+        $produtos = new Produtos();
+        $resultados = $produtos->verificar_estoque_produto($id_produto);
+        if(!$resultados){
+            header('Location: ' . BASE_URL . 'index.php?a=loja');
+            return;
+        }
+        
         //adiciona(gestão) da variavel de sessão do carrinho
         $carrinho = [];
 
