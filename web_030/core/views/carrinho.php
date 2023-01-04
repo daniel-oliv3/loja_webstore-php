@@ -6,8 +6,7 @@
             <pre>
             <?php print_r($_SESSION); ?>
             <pre>
-
-            <button onclick="limpar_carrinho()" class="btn btn-primary">Limpar</button>
+            <a href="?a=limpar_carrinho" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Limpar Carrinho</a>
         </div>
     </div>
 </div>

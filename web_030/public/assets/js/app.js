@@ -15,18 +15,6 @@ function adicionar_carrinho(id_produto){
 }
 
 /*==============================================================*/
-/* Função para remover todos os produto do carrinho */
-function limpar_carrinho(){
-
-    axios.defaults.withCredentials = true;
-    axios.get('?a=limpar_carrinho')
-        .then(function(response){
-            document.getElementById('carrinho').innerText = 0;
-        });
-}
-
-
-/*==============================================================*/
 
 
 
