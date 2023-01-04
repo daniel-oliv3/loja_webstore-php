@@ -27,7 +27,7 @@ use core\classes\Store;
             <?php endif; ?>
 
             <a href="?a=carrinho"><i class="fas fa-shopping-cart"></i></a>
-            <span class="badge bg-warning"></span>
+            <span class="badge bg-warning" id="carrinho"></span>
         </div>
     </div>
 </div>

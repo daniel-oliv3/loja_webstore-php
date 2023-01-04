@@ -45,6 +45,13 @@ class Carrinho {
 
 
     /*==============================================================*/
+    public function limpar_carrinho(){
+        //Limpa o carrinho de todos os produtos
+        $_SESSION['carrinho'] = [];
+    }
+
+
+    /*==============================================================*/
     public function carrinho(){
         //Apresenta a página de carrinho
         Store::Layout([

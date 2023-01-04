@@ -7,7 +7,7 @@
             <?php print_r($_SESSION); ?>
             <pre>
 
-            
+            <button onclick="limpar_carrinho()" class="btn btn-primary">Limpar</button>
         </div>
     </div>
 </div>
