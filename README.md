@@ -460,7 +460,8 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 3* - Recolocar o array na sessão
 ```
 
-
+- Axios - Response Schema
+- Site: https://github.com/axios/axios#response-schema
 
 
 

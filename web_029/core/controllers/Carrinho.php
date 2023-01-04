@@ -31,14 +31,14 @@ class Carrinho {
 
         }else {
             //adiciona novo produto ao carrinho
-            array_push($carrinho, [$id_produto => 1]);
+            $carrinho[$id_produto] = 1;
         }
         //atualiza od dados do carrinho na sessão
         $_SESSION['carrinho'] = $carrinho;
         //devolve a resposta (número de produtos do carrinho)
         $total_produtos = 0;
-        foreach($carrinho as $produto_quantidade){
-            $total_produtos += $produto_quantidade;
+        foreach($carrinho as $quantidade){
+            $total_produtos += $quantidade;
         }
         echo $total_produtos;
     }
