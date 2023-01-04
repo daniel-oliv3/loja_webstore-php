@@ -28,10 +28,10 @@
                     <h5><?= $produto->nome_produto ?></h5>
                     <h6><?= 'R$ ' . preg_replace("/\./", ",", $produto->preco)?></h6>
                     <div>
-                        <?php if($produto->estoque <= 0): ?>
-                                <button class="btn btn-secondary btn-sm"><i class="fas fa-shopping-cart me-2"></i>Produto Indisponível</button>
-                            <?php else: ?>
+                        <?php if($produto->estoque > 0): ?>
                                 <button class="btn btn-warning btn-sm" onclick="adicionar_carrinho(<?= $produto->id_produto ?>)"><i class="fas fa-shopping-cart me-2"></i>Adicionar ao Carrinho</button>
+                            <?php else: ?>
+                                <button class="btn btn-secondary btn-sm"><i class="fas fa-shopping-cart me-2"></i>Produto Indisponível</button>
                         <?php endif; ?>
                     </div>
                 </div>
