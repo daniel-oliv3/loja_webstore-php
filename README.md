@@ -475,7 +475,10 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 - http://localhost/loja_webstore-php/web_030/public/
 
 
+### 31 - CONCLUSÃO DOS MECANISMOS DE SEGURANÇA DO CARRINHO
+- Ex: web_031
 
+- http://localhost/loja_webstore-php/web_031/public/
 
 
 
