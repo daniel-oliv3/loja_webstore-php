@@ -49,7 +49,7 @@ class Produtos {
             'id_produto' => $id_produto
         ];
 
-        $resultados = $bd->select("SELECT * FROM produtos WHERE id_produto = :id_produto AND visivel = 1 AND estoque > 0");
+        $resultados = $bd->select("SELECT * FROM produtos WHERE id_produto = :id_produto AND visivel = 1 AND estoque > 0", $parametros);
 
         return count($resultados) != 0 ? true : false;
     }
