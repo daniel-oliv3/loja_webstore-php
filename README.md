@@ -498,6 +498,10 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 - Criar um ciclo que constroi a estrutura dos dados para o carrinho
 
 
+### 33 - PREPARAR CÁLCULOS E DADOS PARA APRESENTAR O CARRINHO
+- Ex: web_033
+
+- http://localhost/loja_webstore-php/web_033/public/
 
 
 
