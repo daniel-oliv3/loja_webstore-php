@@ -73,6 +73,31 @@ class Carrinho {
 
     /*==============================================================*/
     public function carrinho(){
+        
+        //Verifica se existe carrinho
+        if(!isset($_SESSION['carrinho']) || count($_SESSION['carrinho']) == 0){
+            $dados = [
+                'carrinho' => null
+            ];
+        }else {
+            $ids = [];
+            foreach($_SESSION['carrinho'] as $id_produto => $quantidade){
+                array_push($ids, $id_produto);
+            }
+
+            $ids = implode(",", $ids);
+            $produtos = new Produtos();
+            $resultados = $produtos->buscar_produtos_por_ids($ids);
+
+            //Store::printData($ids);
+            Store::printData($resultados);
+            die();
+
+            $dados = [
+                'carrinho' => 1
+            ];
+        }
+
         //Apresenta a página de carrinho
         Store::Layout([
             'layouts/html_header',
@@ -80,7 +105,7 @@ class Carrinho {
             'carrinho',
             'layouts/footer',
             'layouts/html_footer',
-        ]);
+        ], $dados);
     }
 
 

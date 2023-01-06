@@ -55,6 +55,14 @@ class Produtos {
     }
 
 
+    /*==============================================================*/
+    public function buscar_produtos_por_ids($ids){
+
+        $bd = new Database();
+
+        return $bd->select("SELECT * FROM produtos WHERE id_produto IN ($ids)");
+        
+    }
 
 
 

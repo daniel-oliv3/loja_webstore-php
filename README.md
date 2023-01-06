@@ -486,9 +486,16 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 - http://localhost/loja_webstore-php/web_032/public/
 
 
+- Não existe carrinho?
+    - "Carrinho vazio" Link para voltar a loja
+- Existe carrinho
+    - Imagem | Drescrição | Quantidade | Preço (x)
+    - Imagem | Drescrição | Quantidade | Preço (x)
+    - Imagem | Drescrição | Quantidade | Preço (x)
+                          | Total      | Sum()
 
-
-
+- ID buscar na bd os dados dos produtos que existem no carrinho
+- Criar um ciclo que constroi a estrutura dos dados para o carrinho
 
 
 
