@@ -480,8 +480,10 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 
 - http://localhost/loja_webstore-php/web_031/public/
 
+### 32- BUSCAR INFORMAÇÃO DA BASE DE DADOS A PARTIR DO CARRINHO
+- Ex: web_032
 
-
+- http://localhost/loja_webstore-php/web_032/public/
 
 
 
