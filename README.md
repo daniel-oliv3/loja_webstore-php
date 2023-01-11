@@ -508,6 +508,7 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 - Imagem | titulo | Quantidade | Preço  | (x)
 
 
-
+### 34 - APRESENTAÇÃO DA TABELA DO CARRINHO COM TOTAL E BOOTSTRAP
+- Ex: web_034
 
 
