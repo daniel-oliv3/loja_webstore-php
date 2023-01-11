@@ -34,7 +34,7 @@
                                         <td><img src="assets/img/produtos/<?= $produto['imagem']; ?>" class="img-fluid" width="50px"></td>
                                         <td><?= $produto['titulo'] ?></td>
                                         <td><?= $produto['quantidade'] ?></td>
-                                        <td class="text-end"><?= $produto['preco'] ?></td>
+                                        <td class="text-end"><?= 'R$ ' . str_replace('.', ',', $produto['preco']);  ?></td>
                                         <td><button class="btn btn-danger"><i class="fas fa-times"></i></button></td>
                                     </tr>
                                     

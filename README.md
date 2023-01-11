@@ -511,9 +511,16 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 ### 34 - APRESENTAÇÃO DA TABELA DO CARRINHO COM TOTAL E BOOTSTRAP
 - Ex: web_034
 
+- http://localhost/loja_webstore-php/web_034/public/
+
 ### 35 - MELHORAMENTO ESTÉTICO SUBSTANCIAL DO NOSSO CARRINHO
 - Ex: web_035
 
+- http://localhost/loja_webstore-php/web_035/public/
+
+```php
+<td class="text-end"><?= 'R$ ' . preg_replace("/\./", ",", $produto['preco'])  ?></td>
+```
 
 
 
