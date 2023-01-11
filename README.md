@@ -511,4 +511,23 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 ### 34 - APRESENTAÇÃO DA TABELA DO CARRINHO COM TOTAL E BOOTSTRAP
 - Ex: web_034
 
+### 35 - MELHORAMENTO ESTÉTICO SUBSTANCIAL DO NOSSO CARRINHO
+- Ex: web_035
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
