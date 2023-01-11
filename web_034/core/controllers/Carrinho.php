@@ -122,9 +122,6 @@ class Carrinho {
             $dados = [
                 'carrinho' => $dados_tmp
             ];
-
-            //Store::printData($dados_tmp);
-            //die();
         }
 
         //Apresenta a página de carrinho
