@@ -522,6 +522,8 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 <td class="text-end"><?= 'R$ ' . preg_replace("/\./", ",", $produto['preco'])  ?></td>
 ```
 
+### 36 - REMOVER PRODUTOS DO CARRINHO
+- Ex: web_036
 
 
 
