@@ -71,9 +71,11 @@ class Carrinho {
         unset($carrinho[$id_produto]);
         //atualizar o carrinho na sessão
         $_SESSION['carrinho'] = $carrinho;
+        //apresenta novamente a pagina do carrinho
+        $this->carrinho();
 
-        print_r($_SESSION);
-        die();
+        //print_r($_SESSION);
+        //die();
     }
 
 
