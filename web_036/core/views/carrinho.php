@@ -46,7 +46,7 @@
                                         <td class="align-middle"><h5><?= $produto['titulo'] ?></h5></td>
                                         <td class="text-center align-middle"><h5><?= $produto['quantidade'] ?></h5></td>
                                         <td class="text-end align-middle"><h4><?= 'R$ ' . str_replace('.', ',', $produto['preco']);  ?></h4></td>
-                                        <td class="text-center align-middle"><button class="btn btn-danger btn-sm"><i class="fas fa-times"></i></button></td>
+                                        <td class="text-center align-middle"><a href="?a=remover_produto_carrinho&id_produto=<?= $produto['id_produto'] ?>" class="btn btn-danger btn-sm"><i class="fas fa-times"></i></a></td>
                                     </tr>
                                     
                                     <?php else : ?>

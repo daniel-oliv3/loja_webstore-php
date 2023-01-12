@@ -62,6 +62,22 @@ class Carrinho {
 
 
     /*==============================================================*/
+    public function remover_produto_carrinho(){
+        //vai buscar o id do produto na query string
+        $id_produto = $_GET['id_produto'];
+        //busca o carrinho na sessão
+        $carrinho = $_SESSION['carrinho'];
+        //remove o produto do carrinho
+        unset($carrinho[$id_produto]);
+        //atualizar o carrinho na sessão
+        $_SESSION['carrinho'] = $carrinho;
+
+        print_r($_SESSION);
+        die();
+    }
+
+
+    /*==============================================================*/
     public function limpar_carrinho(){
         //Limpa o carrinho de todos os produtos
         unset($_SESSION['carrinho']);
@@ -94,6 +110,7 @@ class Carrinho {
                 //imagem do produto
                 foreach($resultados as $produto){
                     if($produto->id_produto == $id_produto){
+                        $id_produto = $produto->id_produto;
                         $imagem = $produto->imagem;
                         $titulo = $produto->nome_produto;
                         $quantidade = $quantidade_carrinho;
@@ -101,6 +118,7 @@ class Carrinho {
 
                         //Colocar o produto na coleção
                         array_push($dados_tmp, [
+                            'id_produto' => $id_produto,
                             'imagem' => $imagem,
                             'titulo' => $titulo,
                             'quantidade' => $quantidade,

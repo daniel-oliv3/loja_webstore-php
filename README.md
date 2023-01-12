@@ -525,7 +525,7 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 ### 36 - REMOVER PRODUTOS DO CARRINHO
 - Ex: web_036
 
-
+- http://localhost/loja_webstore-php/web_036/public/
 
 
 
