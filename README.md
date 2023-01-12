@@ -528,7 +528,10 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 - http://localhost/loja_webstore-php/web_036/public/
 
 
+### 37 - FORMATAÇÃO DOS VALORES NO CARRINHO, FUNÇÕES DO PHP E LIMPAR CARRINHO
+- Ex: web_037
 
+- http://localhost/loja_webstore-php/web_037/public/
 
 
 
