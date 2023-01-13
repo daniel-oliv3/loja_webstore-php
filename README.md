@@ -533,8 +533,12 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 
 - http://localhost/loja_webstore-php/web_037/public/
 
+```php
+<td class="text-end align-middle"><h4><?= 'R$ ' . number_format($produto['preco'],2, ',', '.') ?></h4></td>
+```
 
-
+***PHP Number-Format**
+- Site: https://www.php.net/manual/en/function.number-format.php
 
 
 

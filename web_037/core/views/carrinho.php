@@ -45,7 +45,7 @@
                                         <td><img src="assets/img/produtos/<?= $produto['imagem']; ?>" class="img-fluid" width="50px"></td>
                                         <td class="align-middle"><h5><?= $produto['titulo'] ?></h5></td>
                                         <td class="text-center align-middle"><h5><?= $produto['quantidade'] ?></h5></td>
-                                        <td class="text-end align-middle"><h4><?= 'R$ ' . str_replace('.', ',', $produto['preco']);  ?></h4></td>
+                                        <td class="text-end align-middle"><h4><?= 'R$ ' . number_format($produto['preco'],2, ',', '.')  ?></h4></td>
                                         <td class="text-center align-middle"><a href="?a=remover_produto_carrinho&id_produto=<?= $produto['id_produto'] ?>" class="btn btn-danger btn-sm"><i class="fas fa-times"></i></a></td>
                                     </tr>
                                     
@@ -56,7 +56,7 @@
                                         <td></td>
                                         <td></td>
                                         <td class="text-end"><h3>Total:</h3></td>
-                                        <td class="text-end"><h3><?= 'R$ ' . str_replace('.', ',', $produto) ?></h3></td>
+                                        <td class="text-end"><h3><?= 'R$ ' . number_format($produto,2, ',', '.') ?></h3></td>
                                         <td></td>
                                     </tr>
                                         
@@ -67,7 +67,12 @@
                     </table>
                     <div class="row">
                         <div class="col">
-                            <a href="?a=limpar_carrinho" class="btn btn-danger"><i class="fas fa-shopping-cart"></i> Limpar Carrinho</a>
+                            <!--<a href="?a=limpar_carrinho" class="btn btn-danger"><i class="fas fa-shopping-cart"></i> Limpar Carrinho</a> -->
+                            <button onclick="limpar_carrinho()" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Limpar carrinho</button>
+                            <span class="ms-3" id="confirmar_limpar_carrinho" style="display: none;">Tem certeza ?
+                                <button class="btn btn-primary" onclick="limpar_carrinho_off()">Não</button>
+                                <a href="?a=limpar_carrinho" class="btn btn-danger">Sim</a>
+                            </span>            
                         </div>
                         <div class="col text-end">
                             <a href="?a=loja" class="btn btn-secondary"><i class="fas fa-shopping-cart"></i> Continuar comprando</a>
