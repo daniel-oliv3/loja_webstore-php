@@ -580,5 +580,13 @@ $2y$10$xyRFTM9rnK8RVPO9eC7NvelmTwwV7wcJ9LTcgT113xHHwkygxA9iS
         - Apos login com secesso, regressar a loja
         - Remover o "referrer" da sessão
     - Existe
-        - Passo 2 (Confirmar) 
+        - Passo 2 (Confirmar)
+
+
+
+### 39 - RESUMO DA ENCOMENDA E CARREGAMENTO DE DADOS DO CLIENTE
+- Ex: web_039
+
+- http://localhost/loja_webstore-php/web_039/public/
+
 
