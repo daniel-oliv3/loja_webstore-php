@@ -20,6 +20,7 @@ $rotas = [
     'remover_produto_carrinho' => 'carrinho@remover_produto_carrinho',
     'limpar_carrinho' => 'carrinho@limpar_carrinho',
     'carrinho' => 'carrinho@carrinho',
+    'finalizar_encomenda' => 'carrinho@finalizar_encomenda',
 ];
 
 

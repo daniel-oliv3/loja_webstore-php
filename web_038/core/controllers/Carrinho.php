@@ -155,7 +155,7 @@ class Carrinho {
     /*==============================================================*/
     public function finalizar_encomenda(){
         /**/
-
+        Store::printData($_SESSION);
     }
 }
 

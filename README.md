@@ -575,8 +575,10 @@ $2y$10$xyRFTM9rnK8RVPO9eC7NvelmTwwV7wcJ9LTcgT113xHHwkygxA9iS
 **Finalizar Carrinho**
 - Verifica se tem cliente logado
     - Não existe
-        -> Colocar um "referrer" na sessão
-        -> Abrir o quadro login
-        -> Apos login com secesso, regressar a loja
-        -> Remover o "referrer" da sessão 
+        - Colocar um "referrer" na sessão
+        - Abrir o quadro login
+        - Apos login com secesso, regressar a loja
+        - Remover o "referrer" da sessão
+    - Existe
+        - Passo 2 (Confirmar) 
 

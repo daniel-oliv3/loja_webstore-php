@@ -76,7 +76,7 @@
                         </div>
                         <div class="col text-end">
                             <a href="?a=loja" class="btn btn-secondary"><i class="fas fa-shopping-cart"></i> Continuar comprando</a>
-                            <a href="#" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Finalizar pedido</a>
+                            <a href="?a=finalizar_encomenda" class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Finalizar pedido</a>
                         </div>
                     </div>
                 </div>
