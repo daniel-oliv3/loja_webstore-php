@@ -154,8 +154,14 @@ class Carrinho {
 
     /*==============================================================*/
     public function finalizar_encomenda(){
-        /**/
-        Store::printData($_SESSION);
+        
+        //Verifica se existe cliente logado
+        if(!isset($_SESSION['cliente'])){
+            //Redirecionar para o quadro de login
+            Store::redirect('login');
+            echo 'teste!';
+        }
+        //Store::printData($_SESSION);
     }
 }
 
