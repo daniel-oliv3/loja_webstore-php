@@ -541,7 +541,10 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 - Site: https://www.php.net/manual/en/function.number-format.php
 
 
+### 38 - DICAS IMPORTANTES E INÍCIO DA FINALIZAÇÃO DE ENCOMENDA
+- Ex: web_038
 
+- http://localhost/loja_webstore-php/web_038/public/
 
 
 
