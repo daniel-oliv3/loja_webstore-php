@@ -153,6 +153,10 @@ class Carrinho {
 
 
     /*==============================================================*/
+    public function finalizar_encomenda(){
+        /**/
+
+    }
 }
 
 
@@ -163,5 +167,5 @@ class Carrinho {
 
 
 
-
+/*==*/
 ?>

@@ -60,6 +60,10 @@ composer init
 composer update
 ```
 
+**Projeto**
+- http://localhost/loja_webstore-php/
+
+
 ### 5 - FINALIZAÇÃO DA CONSTRUÇÃO DO SISTEMA DE GESTÃO DE BASES DE DADOS
 - Ex: web_005
 
@@ -546,7 +550,33 @@ https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js
 
 - http://localhost/loja_webstore-php/web_038/public/
 
+- Extensão VsCode
+    - `Fold/unfold all icone`
 
+- Online PHP Function(s)
+    - PHP Sandbox: https://onlinephp.io/
 
+**Como recuperar a senha** 
+- Ir no site https://onlinephp.io/
+- Digitar trecho de código
 
+```php
+<?php
+echo password_hash('123456', PASSWORD_DEFAULT);
+```
+
+- Executar, pegar a nova senha encriptada 
+```
+$2y$10$xyRFTM9rnK8RVPO9eC7NvelmTwwV7wcJ9LTcgT113xHHwkygxA9iS
+```
+
+- E alterar a senha na base de dados com a nova senha gerada
+
+**Finalizar Carrinho**
+- Verifica se tem cliente logado
+    - Não existe
+        -> Colocar um "referrer" na sessão
+        -> Abrir o quadro login
+        -> Apos login com secesso, regressar a loja
+        -> Remover o "referrer" da sessão 
 
