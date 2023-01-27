@@ -157,9 +157,13 @@ class Carrinho {
         
         //Verifica se existe cliente logado
         if(!isset($_SESSION['cliente'])){
+
+            //Coloca na sessão um referrer temporário
+            $_SESSION['tmp_carrinho'] = true;
+
             //Redirecionar para o quadro de login
             Store::redirect('login');
-            echo 'teste!';
+
         }
         //Store::printData($_SESSION);
     }
