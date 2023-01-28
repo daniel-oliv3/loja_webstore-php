@@ -590,3 +590,7 @@ $2y$10$xyRFTM9rnK8RVPO9eC7NvelmTwwV7wcJ9LTcgT113xHHwkygxA9iS
 - http://localhost/loja_webstore-php/web_039/public/
 
 
+### 40 - APRESENTAÇÃO DOS DADOS DO CLIENTE E MECANISMO DE MORADA ALTERNATIVA
+- Ex: web_040
+
+- http://localhost/loja_webstore-php/web_040/public/
