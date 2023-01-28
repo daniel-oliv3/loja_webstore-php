@@ -21,6 +21,7 @@ $rotas = [
     'limpar_carrinho' => 'carrinho@limpar_carrinho',
     'carrinho' => 'carrinho@carrinho',
     'finalizar_encomenda' => 'carrinho@finalizar_encomenda',
+    'finalizar_encomenda_resumo' => 'carrinho@finalizar_encomenda_resumo',
 ];
 
 

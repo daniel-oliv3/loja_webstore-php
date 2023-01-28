@@ -164,9 +164,20 @@ class Carrinho {
             //Redirecionar para o quadro de login
             Store::redirect('login');
 
+        } else {
+            Store::redirect('finalizar_encomenda_resumo');
+
         }
-        //Store::printData($_SESSION);
     }
+
+
+    /*==============================================================*/
+    public function finalizar_encomenda_resumo(){
+        echo "Sapup3 RESUMO";
+    }
+
+
+
 }
 
 
