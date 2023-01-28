@@ -173,11 +173,67 @@ class Carrinho {
 
     /*==============================================================*/
     public function finalizar_encomenda_resumo(){
-        echo "Sapup3 RESUMO";
+
+        //Verifica se existe cliente logado
+        if(!isset($_SESSION['cliente'])){
+            Store::redirect('inicio');
+        }
+
+        $ids = [];
+        foreach($_SESSION['carrinho'] as $id_produto => $quantidade){
+            array_push($ids, $id_produto);
+        }
+
+        $ids = implode(",", $ids);
+            $produtos = new Produtos();
+            $resultados = $produtos->buscar_produtos_por_ids($ids);
+
+            $dados_tmp = [];
+            foreach($_SESSION['carrinho'] as $id_produto => $quantidade_carrinho){
+                //imagem do produto
+                foreach($resultados as $produto){
+                    if($produto->id_produto == $id_produto){
+                        $id_produto = $produto->id_produto;
+                        $imagem = $produto->imagem;
+                        $titulo = $produto->nome_produto;
+                        $quantidade = $quantidade_carrinho;
+                        $preco = $produto->preco * $quantidade;
+
+                        //Colocar o produto na coleção
+                        array_push($dados_tmp, [
+                            'id_produto' => $id_produto,
+                            'imagem' => $imagem,
+                            'titulo' => $titulo,
+                            'quantidade' => $quantidade,
+                            'preco' => $preco,
+                        ]);
+                        break;
+                    }
+                }
+            }
+
+            //Calcula o total
+            $total_da_encomenda = 0;
+            foreach($dados_tmp as $item){
+                $total_da_encomenda += $item['preco'];
+            }
+
+            array_push($dados_tmp, $total_da_encomenda);
+
+            $dados = [
+                'carrinho' => $dados_tmp
+            ];
+
+
+        //Apresenta a pagina do carrinho
+        Store::layout([
+            'layouts/html_header',
+            'layouts/header',
+            'encomenda_resumo',
+            'layouts/footer',
+            'layouts/html_footer',
+        ], $dados);
     }
-
-
-
 }
 
 
