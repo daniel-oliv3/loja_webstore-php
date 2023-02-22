@@ -7,6 +7,7 @@
 	//Carregar o Config
 	//require_once('../config.php');
 
+	
 	//Carregar todas as classes do projeto
 	require_once('../vendor/autoload.php');
 
