@@ -13,6 +13,9 @@
 
 	//Carrega o sistema de rotas
 	require_once('../core/rotas.php');
+
+
+	
 	/*==========================================================*/
 	?>
 	
